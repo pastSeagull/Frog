@@ -1,17 +1,22 @@
 <template>
-<home-head></home-head>
+  <div>
+    <home-head></home-head>
+    <home-swiper></home-swiper>
+  </div>
 </template>
 
 <script>
-import HomeHead from './compoheht/header'
+import HomeHead from './compoheht/Header'
+import HomeSwiper from './compoheht/Swiper'
 export default {
   name: 'Home',
   components: {
-    HomeHead
+    HomeHead,
+    HomeSwiper
   }
 }
 </script>
 
-<style>
+<style lang="stylus" scoped>
 
 </style>
