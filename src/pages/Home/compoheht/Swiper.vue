@@ -2,8 +2,9 @@
 <div class="swiper">
   <swiper :options="swiperOption">
     <!-- slides -->
-    <swiper-slide v-for="list of SwiperList" :key="list.id"><img class="swiper-img" :src="list.img" alt=""></swiper-slide>
-
+    <!-- <swiper-slide v-for="list of SwiperList" :key="list.id"><img class="swiper-img" :src="list.img" alt=""></swiper-slide> -->
+    <swiper-slide><img class="swiper-img" src="../../../assets/images/lb1.jpg" alt=""></swiper-slide>
+    <swiper-slide><img class="swiper-img" src="../../../assets/images/lb1.jpg" alt=""></swiper-slide>
     <!-- Optional controls -->
     <div class="swiper-pagination"  slot="pagination"></div>
   </swiper>
@@ -21,10 +22,11 @@ export default {
       },
       SwiperList: [{
         id: '1',
-        img: '/static/img/lb1.c29beaa.jpg'
-      }, {
+        img: '../../../assets/images/lb1.jpg'
+      },
+      {
         id: '2',
-        img: '/static/img/lb1.c29beaa.jpg'
+        img: '../../../assets/images/lb1.jpg'
       }]
     }
   }
